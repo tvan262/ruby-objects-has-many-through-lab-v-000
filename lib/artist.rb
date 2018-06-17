@@ -1,4 +1,5 @@
 class Artist
+
   attr_accessor :name
 
   def initialize(name)
@@ -16,7 +17,7 @@ class Artist
   end
 
   def genres
-    @songs.collect do |song|
+    songs.map do |song|
       song.genre
     end
   end
